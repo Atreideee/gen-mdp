@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Génératreur de mot de passe</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Génératreur de mot de passe</h1>
+     <form>
+            <input type="text" id="MyPass">
+            <button onclick="genaratepassword(event)">Génération</button>
+     </form>
+    </div>
+
+    <script>
+
+        const c = 'AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbn1234567890' //initialisation de l'alphabet
+        const longueur = 12 //longueur du mot de passe
+
+        function genaratepassword(event)
+        {
+            event.preventDefault()
+            let input = document.querySelector("#MyPass")
+            let MDP = ''
+            for(let i=0; i < longueur; i++) //pour creer le MDP jusqu'a 12 caractères
+            {
+                const indexC = Math.floor(Math.random() *c.length); //constante pour prendre aléatoirement dans la constante c
+                MDP += c[indexC]; //renvoie l'info du resultat dans MDP 
+            }
+            input.value = MDP 
+        }
+    </script>
+</body>
+</html>
