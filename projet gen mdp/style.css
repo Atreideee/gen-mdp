@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
 form{
     display: flex;
     height: 100%;
@@ -12,7 +17,7 @@ form{
 }
 form input{
     height: 5%;
-    width: 30%;
+    width: 70%;
     font-size: 30px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -21,7 +26,7 @@ form input{
 }
 form button{
     height: 5%;
-    width: 8%;
+    width: 25%;
     font-size: 20px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -32,7 +37,26 @@ form button{
 h1{
     display: flex;
     justify-content: center; 
+    margin-bottom: 20px;
 }
 .container{
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: brown;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.filter{
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.filter :nth-child(1),
+.filter :nth-child(3) 
+.filter :nth-child(5) 
+.filter :nth-child(7) {
+    margin: 5px;
 }
