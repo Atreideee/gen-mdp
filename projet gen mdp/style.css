@@ -19,7 +19,7 @@ form{
 }
 form input{
     height: 100%;
-    width: 100%;
+    width: 150%;
     font-size: 30px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -50,7 +50,7 @@ h1{
     left: 50%;
     background-color: #2db1ee70;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 600px;
     padding: 20px;
     border-radius: 10px;
 }
